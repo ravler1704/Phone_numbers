@@ -3,7 +3,7 @@ Error_reporting(E_ALL);
 echo "<h1>Телефонная книга</h1>";
 echo "<br/>";
 
-$content = file_get_contents ('json_phone.txt');
+$content = file_get_contents ('json_phone.json');
 $decodeData = json_decode ($content, true);
 
 $counter = count($decodeData);
